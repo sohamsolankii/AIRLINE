@@ -1,3 +1,4 @@
-import info from "./info-controller.js" 
-
-export default info 
+module.exports = {
+    InfoController: require('./info-controller'),
+    EmailController: require('./email-controller')
+}

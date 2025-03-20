@@ -1,8 +1,9 @@
-import dotenv from "dotenv"
-dotenv.config()
+const dotenv = require('dotenv');
 
-const ServerConfig = {
-	PORT: process.env.PORT || 3000,
+dotenv.config();
+
+module.exports = {
+    PORT: process.env.PORT,
+    GMAIL_PASS: process.env.GMAIL_PASS,
+    GMAIL_EMAIL: process.env.GMAIL_EMAIL
 }
-
-export default ServerConfig

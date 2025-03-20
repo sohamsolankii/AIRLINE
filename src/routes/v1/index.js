@@ -1,7 +1,11 @@
-import express from "express"
-import info from "../../controllers/index.js"
-const router = express.Router()
+const express = require('express');
 
-router.get("/info", info)
+const { InfoController, EmailController } = require('../../controllers');
 
-export default router 
+const router = express.Router();
+
+router.get('/info', InfoController.info);
+
+router.post('/tickets', EmailController.create);
+
+module.exports = router;
