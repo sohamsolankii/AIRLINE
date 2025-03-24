@@ -35,7 +35,7 @@ Lets take a look inside the `src` folder
         PORT=3000
     ```
  - go inside the `src` folder and execute the following command:
-    ```
+    ```w
       npx sequelize init
     ```
  - By executing the above command you will get migrations and seeders folder along with a config.json inside the config folder. 
